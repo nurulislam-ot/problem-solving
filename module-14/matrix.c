@@ -23,13 +23,11 @@ int main() {
       }
       // secondary diagonal
       if (i + j == n - 1) {
-        printf("%d ", matrix[i][j]);
         secondary_diagonal_sum += matrix[i][j];
       }
     }
   }
 
-  // printf("\npr=%d, se=%d\n", primary_diagonal_sum, secondary_diagonal_sum);
   printf("%d\n", abs(primary_diagonal_sum - secondary_diagonal_sum));
 
   return 0;
